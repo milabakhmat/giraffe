@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+main {
+  height: 100vh;
+  display: grid;
+}
+.two-columns {
+  display: grid;
+  grid-template: auto/minmax(45%, 50%) minmax(45%, 50%);
+  gap: 40px;
+  padding: 40px;
+}
+.two-columns:last-of-type {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+.card.shadow {
+  background: #fff;
+  border-radius: 5px;
+  border: 4px black solid;
+  padding: 30px;
+}
+.card.shadow:first-child {
+  padding: 0px;
+  margin: 0px;
+}
+h5,
+p,
+ul,
+li {
+  font-family: Montserrat;
+}
+
+p,
+ul,
+li {
+  line-height: 30px;
+  font-size: 30px;
+}
+h5 {
+  margin-left: 24px;
+  line-height: 21px;
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+p {
+  color: rgb(95, 111, 129);
+  font-size: 16px;
+  line-height: 1.4;
+  fill: rgb(51, 51, 51);
+  margin: 24px 24px 24px 24px;
+  font-family: Montserrat;
+  font-style: strong;
+}
+.column1 {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 5px;
+  border: 4px black solid;
+}
+
+.image {
+  object-fit: cover;
+  width: 80%;
+  max-height: 100%;
+
+  grid-row: 1 / span 3;
+  grid-column: 100%;
+
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  border-image: none;
+}
+.desc {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+.center-image {
+  position: absolute;
+  top: 550px;
+  left: 850px;
+}
+.center-image img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 50%;
+}
+.logo {
+  background-size: cover;
+}
