@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+﻿@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 main {
   height: 100vh;
   display: grid;
 }
 .two-columns {
   display: grid;
-  grid-template: auto/minmax(45%, 50%) minmax(45%, 50%);
+  grid-template: auto/minmax(45%, 50%) minmax(40%, 45%);
   gap: 40px;
   padding: 40px;
 }
@@ -19,9 +19,12 @@ main {
   background: #fff;
   border-radius: 5px;
   border: 4px black solid;
-  padding: 30px;
-  padding-top: 10px;
+  /* padding: 30px;
+  padding-top: 10px; */
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card.shadow {
   background: #fff;
@@ -80,7 +83,7 @@ ul {
 
 .image {
   object-fit: cover;
-  width: 80%;
+  width: 90%;
   max-height: 100%;
 
   grid-row: 1 / span 3;
